@@ -73,6 +73,21 @@ header .hero-text {
   padding: 10px;
   text-align: center;
 }
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 36px;
+  color: #fff;
+  transition: color 0.3s;
+}
+header .fa-chevron-down:hover {
+  color: #d01012;
+}
 
 @media (min-width: 968px) {
   header .hero-img {
