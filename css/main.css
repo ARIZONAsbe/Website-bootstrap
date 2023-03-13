@@ -12,6 +12,11 @@ body {
   background-color: #444;
 }
 
+.red-text {
+  font-weight: 700;
+  color: #d01012;
+}
+
 nav {
   background-color: transparent;
   text-transform: uppercase;
@@ -27,7 +32,7 @@ nav .nav-link {
 nav .nav-link:hover {
   color: #EE9B00;
 }
-nav .active {
+nav .nav-link.active {
   color: #EE9B00;
 }
 nav .fa-bars {
@@ -39,16 +44,15 @@ nav .ti-lego {
   font-size: 36px;
 }
 
-.red-text {
-  font-weight: 700;
-  color: #d01012;
-}
-
 header {
   color: #fff;
 }
 header h1 {
   text-transform: uppercase;
+  font-size: 36px;
+}
+header p {
+  font-size: 16px;
 }
 header .hero-img {
   position: relative;
@@ -89,12 +93,18 @@ header .fa-chevron-down:hover {
   color: #d01012;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 576px) {
   header .hero-img {
     background-image: url(../img/ferrari-brick-lg.jpg);
   }
+  header h1 {
+    font-size: 46px;
+  }
+  header p {
+    font-size: 24px;
+  }
 }
-@media (max-width: 968px) {
+@media (max-width: 992px) {
   header .hero-img {
     background-position-x: -200px;
     background-position-y: 250px;
