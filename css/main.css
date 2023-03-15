@@ -17,6 +17,10 @@ body {
   color: #d01012;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
   background-color: transparent;
   text-transform: uppercase;
@@ -91,6 +95,31 @@ header .fa-chevron-down {
 }
 header .fa-chevron-down:hover {
   color: #d01012;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #001219;
+}
+main .container .underline {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #d01012;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
 }
 
 @media (min-width: 576px) {
