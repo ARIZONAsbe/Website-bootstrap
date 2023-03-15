@@ -25,6 +25,14 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.underline {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #d01012;
+}
+
 nav {
   background-color: transparent;
   text-transform: uppercase;
@@ -34,13 +42,13 @@ nav {
 nav .navbar-brand {
   color: #fff;
 }
-nav .nav-link {
+nav .navbar-nav .nav-link {
   color: #fff;
 }
-nav .nav-link:hover {
-  color: #EE9B00;
+nav .navbar-nav .nav-link.active {
+  color: #CA6702;
 }
-nav .nav-link.active {
+nav .nav-link:hover {
   color: #EE9B00;
 }
 nav .fa-bars {
@@ -105,13 +113,6 @@ main h2 {
   text-align: center;
   text-transform: uppercase;
 }
-main .container .underline {
-  margin: 0 auto;
-  margin-bottom: 40px;
-  width: 60px;
-  height: 4px;
-  background-color: #d01012;
-}
 
 .aboutus i {
   margin-top: 20px;
@@ -139,12 +140,15 @@ main .container .underline {
   color: #ddd;
   z-index: 0;
 }
-.aboutus-hero i {
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
   margin-top: 20px;
   font-size: 30px;
 }
-.aboutus-hero .aboutus-card-title {
-  font-size: 18px;
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
   text-transform: uppercase;
 }
 .aboutus-hero .aboutus-shadow {
@@ -154,6 +158,27 @@ main .container .underline {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .carousel-control-prev-icon {
+  filter: invert(0.5);
+}
+.portfolio .carousel-control-next-icon {
+  filter: invert(0.5);
 }
 
 @media (min-width: 576px) {
@@ -171,8 +196,8 @@ main .container .underline {
   }
 }
 @media (max-width: 992px) {
-  :root {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
   header .hero-img {
     background-position-x: -200px;

@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navbar");
-  const btnBurger = document.querySelector(".navbar-toggler");
   const allNavItems = document.querySelectorAll(".nav-link");
   const navList = document.querySelector(".navbar-collapse");
 
