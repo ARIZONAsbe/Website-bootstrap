@@ -1,6 +1,10 @@
 @use "reset";
 @use "colors" as c;
 
+:root {
+  scroll-padding-top: 82px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -133,9 +137,17 @@ main {
     font-size: 18px;
     text-transform: uppercase;
   }
-  
+
   .aboutus-card-text {
     font-size: 14px;
+  }
+
+  .aboutus-hover {
+    transition: 0.3s;
+  }
+
+  .aboutus-hover:hover {
+    color: c.$dark-cyan;
   }
 }
 
@@ -155,6 +167,10 @@ main {
 }
 
 @media (max-width: 992px) {
+  :root {
+    scroll-padding-top: 72px;
+  }
+
   header {
     .hero-img {
       background-position-x: -200px;
