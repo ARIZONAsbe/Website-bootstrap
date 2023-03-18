@@ -263,6 +263,23 @@ main h2 {
   text-transform: uppercase;
 }
 
+.achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+.achievements .achievement-number {
+  font-size: 22px;
+}
+.achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   header .hero-img {
     background-image: url(../img/ferrari-brick-lg.jpg);

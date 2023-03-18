@@ -126,6 +126,7 @@ main {
   }
 }
 
+// about-us section
 .aboutus {
   i {
     margin-top: 20px;
@@ -182,6 +183,7 @@ main {
   }
 }
 
+// portfolio section
 .portfolio {
   .carousel-item {
     position: relative;
@@ -253,7 +255,7 @@ main {
   }
 }
 
-// team
+// team section
 .team {
   position: relative;
   background-image: url("../img/team/conference-room.jpg");
@@ -306,6 +308,31 @@ main {
     text-transform: uppercase;
   }
 }
+
+// achivements section
+.achievements {
+  i {
+    padding: 10px;
+    font-size: 48px;
+    color: c.$white;
+    text-shadow: 0 0 5px #000;
+  }
+
+  .achievements-list {
+    padding: 20px 0;
+  }
+
+  .achievement-number {
+    font-size: 22px;
+  }
+
+  .achievement-text {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+
+
 
 @media (min-width: 576px) {
   header {
