@@ -42,6 +42,9 @@ nav {
 nav .navbar-brand {
   color: #fff;
 }
+nav .navbar-brand:hover {
+  color: #EE9B00;
+}
 nav .navbar-nav .nav-link {
   color: #fff;
 }

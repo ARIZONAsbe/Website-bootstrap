@@ -38,6 +38,10 @@ nav {
     color: c.$white;
   }
 
+  .navbar-brand:hover {
+    color: c.$orange;
+  }
+
   .navbar-nav {
     .nav-link {
       color: c.$white;
@@ -283,7 +287,7 @@ main {
   }
 
   .card {
-    transition: transform .3s;
+    transition: transform 0.3s;
     img {
       height: 300px;
       object-fit: cover;
@@ -331,10 +335,6 @@ main {
     text-transform: uppercase;
   }
 }
-
-
-
-
 
 @media (min-width: 576px) {
   header {
