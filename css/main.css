@@ -13,7 +13,7 @@
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 .red-text {
@@ -181,6 +181,88 @@ main h2 {
   filter: invert(0.5);
 }
 
+.prices .price-box {
+  position: relative;
+  height: 400px;
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #001219;
+}
+.prices .price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+.prices .price-box .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
+}
+
+.price-info {
+  margin-top: 20px;
+}
+.price-info a {
+  text-decoration: none;
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/team/conference-room.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.team h2 {
+  color: #ddd;
+}
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+.team .card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.team .card {
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card-body {
+  height: 200px;
+}
+.team .card:hover {
+  transform: scale(0.96);
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   header .hero-img {
     background-image: url(../img/ferrari-brick-lg.jpg);
@@ -190,6 +272,9 @@ main h2 {
   }
   header p {
     font-size: 24px;
+  }
+  header .price-info {
+    font-size: 14px;
   }
   main .aboutus-hero {
     background-image: url(../img/brick-car-large.jpg);
@@ -202,5 +287,8 @@ main h2 {
   header .hero-img {
     background-position-x: -200px;
     background-position-y: 250px;
+  }
+  .price-info {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
