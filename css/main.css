@@ -283,6 +283,51 @@ main h2 {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("../img/contact-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 0, 0, 0.8);
+  z-index: -1;
+}
+.contact .contact-item {
+  margin: 30px 0;
+}
+.contact .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-item p {
+  font-weight: bold;
+}
+.contact .contact-item .social-media {
+  font-size: 30px;
+}
+.contact .contact-item .social-media a {
+  padding: 10px;
+}
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+.contact i {
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   header .hero-img {
     background-image: url(../img/ferrari-brick-lg.jpg);
